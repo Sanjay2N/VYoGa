@@ -17,4 +17,5 @@ tensorflow-intel==2.11.0
 tensorflow-io-gcs-filesystem==0.28.0
 threaded==4.1.0
 h5py==3.7.0
+python-decouple==3.6
 Pillow==9.3.0
