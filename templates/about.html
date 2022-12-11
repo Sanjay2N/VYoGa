@@ -1,0 +1,35 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'about.css' %}" rel="stylesheet" >
+    </head>
+
+    <body>
+        <div class="back">
+            
+            <button id="myButton" class="b" >Home</button>
+
+    <script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "{% url 'frontpage' %}";
+    };
+</script>
+          </div>
+        <h1>About</h1>
+        {% comment %} <p id="p2">jhhgdhfdtqhdcsghtdcqwthdcqwhg</p>
+        <script>
+            document.getElementById("p2").innerHTML="100"
+        </script> {% endcomment %}
+
+        <div class="info">
+            <h3>Hey there! Welcome to VYoGa, developed in 2022 by PES UNIVERSITY final year students.</h3>
+            <p>Our aim is to develop an interactive website that guides trainee with correct yoga posture without an instructor and acts as a companion while you perform yoga.</p>
+            <p>VYoGa is inspired by various machine learning models for visual recognition.We experimented by taking this as our final year project.</p>
+            <p>VYoGa uses mediapipe (developed by google) for pose estimation and  Django(as website backend).</p>
+        </div>
+        <p class="foot"> Created with &#128153 and &#128167 by Adithya Rao, Shreyas S and Sanjaya K C</p>
+    </body>
+
+</html>

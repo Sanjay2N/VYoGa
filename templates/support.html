@@ -1,0 +1,44 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'support.css' %}" rel="stylesheet" >
+    </head>
+    <body>
+        <div class="back">
+            <button id="myButton" class="b" >Home</button>
+
+    <script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "{% url 'frontpage' %}";
+    };
+</script>
+          </div>
+        <h1>VYoGa support</h1>
+        <div class="main">
+        <div class="a">
+        <h2>BASIC :</h2>
+        <p>Make sure your system is connected to decent internet.<br>
+        Make sure you're in a well lit up room with system camera facing you.<br>
+        Make sure your whole body is visible on the screen.</p>
+        </div>
+        <br><br>
+        <div class="a">
+        <h2>COURSE :</h2>
+        <P>Contains 3 consecutive poses that is to be performed one after another. <br>
+        Along with your real time video, pose image will also to displayed seeing which you need to perform the pose for 
+        1 minute without making any error.<br>
+        If failed, timer will restart so you again need to perform the same pose for 1 minute.<br>
+        After you're done with first pose next pose will be displayed and in the same way you need to perform 3rd pose to complete the course.</p>
+        </div>
+        <br><br>
+        <div class="a">
+        <h2>PRACTICE :</h2>
+        <p>If you have problem with any pose and you want to learn how to correct yourself in any particular pose then PRACTICE section is here for your help.</p>
+        </div>
+        </div>
+        
+    </body>
+    <p class="foot"> Created with &#128153 and &#128167 by Adithya Rao, Shreyas S and Sanjaya K C</p>
+</html>

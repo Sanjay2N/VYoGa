@@ -1,0 +1,44 @@
+{% load static %}
+<html>
+        <head>
+         <link rel="stylesheet" href="{% static 'frontpage.css' %}">
+        </head>
+        <body>
+    <h1>VYoGa</h1>
+    <h2>Center Your Mind, Strengthen Your Body, Balance Your Soul.</h2>
+
+    <div class="mid">
+        <button id="about" class="b" >ABOUT</button>
+        
+
+        <script type="text/javascript">
+        document.getElementById("about").onclick = function () {
+            location.href = "{% url 'about' %}";
+        };
+        </script>
+        <button id="support" class="b" >SUPPORT</button>
+        <script type="text/javascript">
+            document.getElementById("support").onclick = function () {
+                location.href = "{% url 'support' %}";
+            };
+        </script>
+        <button id="course" class="b" >COURSE</button>
+        <script type="text/javascript">
+            document.getElementById("course").onclick = function () {
+                location.href = "{% url 'course' %}";
+            };
+        </script>
+        <button id="practice" class="b" >PRACTICE</button>
+        <script type="text/javascript">
+            document.getElementById("practice").onclick = function () {
+                location.href = "{% url 'practice' %}";
+            };
+        </script>
+        
+
+
+        
+    </div>
+</body>
+<p class="foot"> Created with &#128153 and &#128167 by Adithya Rao, Shreyas S and Sanjaya K C</p>
+</html>

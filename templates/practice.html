@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'practice.css' %}">
+    <title> Practice</title>
+    <button   id="frontpage" class="b">Back</button>
+    <script type="text/javascript">
+      document.getElementById("frontpage").onclick = function () {
+          location.href = "{% url 'frontpage' %}";
+      };
+      </script>
+  </head>
+  <body>
+    <div class="cont">
+        <a href="{% url 'tree' %}" target="_self">
+          <img src="{% static 'tree.jpg' %}" alt=""/>
+        </a>
+        <a href="{% url 'warrior' %}" target="_self">
+          <img src="{% static 'warrior.jpg' %}" alt=""/>
+        </a>
+        <a href="{% url 'goddess' %}" target="_self">
+          <img src="{% static 'goddess.jpg' %}" alt=""/>
+        </a>
+      </div> 
+  </body>
+</html>

@@ -1,0 +1,1 @@
+web: gunicorn VYoGa.wsgi --log-file -

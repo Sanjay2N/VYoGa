@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+  <head>
+    <h1> VYoGa</h1>
+    <button   id="practice" class="b">Back</button>
+    <script type="text/javascript">
+      document.getElementById("practice").onclick = function () {
+          location.href = "{% url 'practice' %}";
+      };
+      </script>
+    <link rel="stylesheet" href="{% static 'practicepose.css' %}">
+  </head>
+  <body>
+  <div class="cont">
+      <img src="{% url 'warriorView' %}" >
+      <img src="{% static 'warrior.jpg' %}" >
+  </div>
+  </body>
+</html>

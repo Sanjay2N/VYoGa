@@ -1,0 +1,50 @@
+body{
+  background-image: url('background.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  display: block;
+}
+h1{
+  text-align: center;
+  font-size: 60px;
+  color: rgba(99, 81, 46, 0.76);
+}
+button {
+  text-align: center;
+  margin-right:100px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  top:2%;
+  left:5%;
+  position: absolute;
+  background-color: wheat; 
+  color: rgba(54, 46, 29, 0.76);
+  border-radius: 12px;
+  outline: none;
+}
+button:hover {
+  background-color: rgb(226, 201, 153);
+}
+button:active {
+  background-color:rgb(226, 201, 153);
+}
+
+img{
+  padding: 50px;
+  float: left;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.cont{
+  text-align: center;
+  position: absolute;
+  top: 10%;
+}

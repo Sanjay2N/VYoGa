@@ -1,0 +1,25 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'course.css ' %}">
+    <title> VYoGa</title>
+  </head>
+  <body>
+    
+    <div class="back">
+    <h1> VYoGa</h1>
+    <button id="myButton" class="b" >Home</button>
+
+    <script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "{% url 'frontpage' %}";
+    };
+    </script>
+  </div>
+    <img src = "{% url 'courseView' %}" width="1520" height="635">
+    
+  </body>
+</html>
+
